@@ -1,0 +1,195 @@
+
+body{
+    background-color: rgb(103, 110, 117);
+}
+.container {
+   max-width: 26%;
+   max-height: 265px;
+    /* background-color: rgb(156, 208, 254); */
+    /* background: linear-gradient(to right, grey , rgb(120, 120, 108), rgb(149, 158, 149), rgb(159, 194, 194), rgb(205, 205, 235), rgb(144, 138, 144));  */
+    align-items: center;
+   
+    /* background-attachment: fixed; */
+    
+    padding: 2px 2px;
+    /* border: 4px solid black; */
+    
+margin: 115px 275px;
+position: fixed;
+display: block;
+transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.num input{
+height: auto;
+width: 50px;
+ padding: 2px 2px ;
+ margin: 2px 2px;
+ 
+
+}
+.exp{
+    margin: -9px 2px;
+    display: block;
+}
+.exp p{
+    margin: -3px 2px;
+    font-size: smaller;
+    display: block;
+    color: white;
+}
+.exp input{
+    height: 12px ;
+    display: inline-block;
+    width: 35px;
+ padding: 2px 2px ;
+ margin: 2px 2px;
+ 
+
+}
+.cvv{
+    margin: 6px 210px;
+    display: block;
+
+}
+.cvv p{
+    margin: -3px 2px;
+    display: block;
+    font-size: smaller;
+    color: white;
+}
+
+.cvv input{
+    height: 12px ;
+    width: 45px;
+ padding: 2px 2px ;
+ display: block;
+ margin: 2px 2px;
+}
+.name {
+    padding: 2px 2px ;
+    margin: -20px 2px;
+    display: block;
+}
+/* .crd {
+    padding: 0px 272px ;
+ margin: 2px 2px;
+ display: block;
+
+ 
+ background: linear-gradient(to left, orange , yellow, green, cyan, blue, violet);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+
+.crd p {
+    margin: 2px 2px;
+    display: block;
+} */
+.logo{
+padding: 2px 11px;
+margin: 2px 2px;
+display: block;
+}
+.logo img{
+height: 30px;
+width: 100px;
+display: block;
+
+}
+.chip{
+padding: 15px 25px;
+margin: 2px 25px;
+display: block;
+}
+.chip img{
+    height: 38px;
+    width: 46px;
+    display: block;
+
+}
+.wifi{
+padding: 2px 2px;
+margin: 2px 2px;
+display: block;
+
+}
+.wifi img{
+height: 30px;
+width: 30px;
+position: absolute;
+    right: 85px;
+    bottom: 146px;
+    display: block;
+    filter: invert(100%);
+}
+
+.flip{
+    background-color: transparent;
+   
+  
+  perspective: 1000px;
+}
+
+.flip:hover .container {
+    transform: rotateY(180deg);
+
+}
+/*
+ .flipfront:hover{
+    transform: rotateY(180deg);
+  }  */
+  
+  .flipfront .flipback{
+   
+  
+    -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+  }
+  .flipfront{
+    background-image: url(./IMG/bit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 245px;
+    border-radius: 10px;
+    border: px solid rgb(242, 255, 0);
+    /* margin: 2px 554px; */
+    z-index: 2;
+    position: fixed;
+   
+  }
+  .flipfront:hover{
+opacity: 0;
+  }
+  
+
+  .flipback {
+    background-image: url(./IMG/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: white;
+    transform: rotateY(180deg);
+    max-width: 100%;
+    height: 238px;
+    margin: 0px 0px;
+    padding: 2px 2px;
+    border-radius: 10px;
+    border: 1px solid red;
+    display: block;
+   
+  }
+
+  .flipfront .wifi .logo .chip .num .exp .name {
+    margin: 0px 2000px;
+  }
+  footer{
+    height: 42px;
+    width: 102%;
+    margin: 14px -3px;
+    margin-top: 34px;
+    background-color: black;
+    padding: 5px 0px;
+  }
